@@ -1,1 +1,1 @@
-### Spring으로 CRUD 연습하기
+#### 🎈 Spring CRUD 기록일지 🎈
