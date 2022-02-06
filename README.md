@@ -1,1 +1,1 @@
-#### 🎈 Spring CRUD 기록일지 🎈
+#### 🎈 Spring 기록일지 🎈
