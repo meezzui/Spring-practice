@@ -27,7 +27,7 @@
 
 + `build.gradle`에 의존성 추가
   + `implementation 'org.springframework.boot:spring-boot-starter-security'` : 스프링 시큐리티를 사용하기 위해 추가
-	+ `implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'`: 뷰 단에서 현재 로그인된 사용자의 정보를 가져오기 위해 추가
+  + `implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'`: 뷰 단에서 현재 로그인된 사용자의 정보를 가져오기 위해 추가
 
 + Config 파일 작성
   + Config 파일은 `WebSecurityConfigurerAdapter`를 상속받아 구현한다.
