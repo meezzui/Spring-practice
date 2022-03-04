@@ -100,6 +100,18 @@ Type 2 => http://127.0.0.1/index/1 -> Rest api에서 값을 호출할 때 주로
   + Entity에 의해 생성된 DB에 접근하는 메서드 `예-findAll()` 들을 사용하기 위한 인터페이스이다.
   + extends를 통해서 상속받으면 해당 레포지토리의 객체를 이용해서 기본적으로 제공되는 메서드(save(), findAll(), get()) 등을 사용할 수 있게 된다.
 
+#### BaseService
++ BaseService는 각각의 service에서 repository를 생성해서 다른 이름의 repository를 사용함을 지양하기 위한 목적으로 만들어졌다. 
++ 그래서 상위 repository인 JpaRepository type을 형으로 갖는다.
+```java
+@Component // autowired를 받기 위해 component로 생성
+public abstract class BaseService<Req,Res,Entity> implements CrudInterface<Req,Res> {
+
+    @Autowired(required = false) // = 꼭 default는 아니다
+    protected JpaRepository<Entity,Long> baseRepository;
+}
+```
+
 
 
 
