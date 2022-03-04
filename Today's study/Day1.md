@@ -65,6 +65,9 @@
 + @Controller + @ResponseBody 이며, 메소드의 return(반환 결과값)을 문자열(JSON) 형태로 반환한다. 
 + view가 필요없는 API만 지원하는 클래스에 사용되며, json 이나 xml 과 같은 문자열의 return이 주목적이다.
 
+#### @NonNull
++ 자동으로 null체크를해서, null이 넘어온 경우에 NullPointerException을 발생시킨다.
+
 
 
 
