@@ -15,3 +15,24 @@
 #### VO란❓❓
 + `resultType`을 `VO`로 지정해 주면 알아서 `setter`를 통해 값이 들어가게 된다.
 + 그리고 이름은 `Camel Case`를 사용한다. => `Camel Case`란?? `_`를 쓰지않고 대문자로 단어를 구분한다. 예) catBox 이런 식
++ 예시)
+```node
+// .xml 파일에 작성
+<select id="getTagsByPlaceNo" resultType="tagVo">
+  // 여기는 SQL 쿼리문 들어가는 곳!!
+</select>
+  
+// TagVO.class
+@Alias("tagVo")
+public class TagVO {
+	private int tagNo;
+	private String tagNm;
+	private String ctrCd;
+}
+```
++ 이렇게 쿼리문을 쓴 곳에서 `resultType` 값을 정해주면 `@Alias`로 그 값을 `VO`에서 적어주면 해당 이름을 찾아 쿼리문을 `VO`에 적은 타입으로 반환해 준다.
+
+#### @Alias 어노테이션
++ `@Alias`는 `mybatis`에서 지원하는 어노테이션으로 별칭을 지정할 때 사용한다.
+
+
