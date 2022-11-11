@@ -68,6 +68,7 @@ WHERE LEIS_GDS_ID = '300000001';
   WHERE LEIS_GDS_ID = #{leisGdsId}
 </select>
 ```
-+ 
++ `id="getLeisGdsDtlByLeisGdsId"`: `id`는 `mapper`에 적어준 대로 그대로 써준다.
++ `resultType="leisGdsDtl"`: `resultType`은 VO에 있는 파일의 @Alias("")이 어노테이션에 적어준 이름값을 넣으면 된다.
 
   
