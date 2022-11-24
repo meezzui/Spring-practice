@@ -7,10 +7,8 @@
 @Data
 @Alias("reviews")
 public class Review {
-  public static class Rvm extends ComnMbrRvwHis {
-    private long dsplyCtgrySeqNo;
-    private String gdsNmCn;
-    private String ctgryNmCn;
+  public static class Rvm extends RvwHis {
+    
   }
 }
 ```
@@ -20,12 +18,8 @@ public class Review {
 ```node
 @Data
 @Alias("reviews")
-public class Review extends ComnMbrRvwHis{
-    private long dsplyCtgrySeqNo;
-    private String gdsNmCn;
-    private String ctgryNmCn;
-    private String expsrYn;
-
+public class Review extends RvwHis{
+    
 }
 ```
 + 이렇게 해주는게 더 효율적이다‼️
