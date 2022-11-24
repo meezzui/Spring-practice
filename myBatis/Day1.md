@@ -25,9 +25,7 @@
 // TagVO.class
 @Alias("tagVo")
 public class TagVO {
-	private int tagNo;
-	private String tagNm;
-	private String ctrCd;
+
 }
 ```
 + 이렇게 쿼리문을 쓴 곳에서 `resultType` 값을 정해주면 `@Alias`로 그 값을 `VO`에서 적어주면 해당 이름을 찾아 쿼리문을 `VO`에 적은 타입으로 반환해 준다.
