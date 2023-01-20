@@ -12,9 +12,8 @@
 + 적용사례
   ```node
   catch (Exception e) {
-      String[] target = {"상품"};
-      log.error(messageSource.getMessage("ADEX-S00003", target));
-      throw new ServerException("ADEX-S00003", messageSource.getMessage("ADEX-S00003", target));
+      log.error(messageSource.getMessage("해당 에러 메시지 코드란"));
+      throw new ServerException("해당 에러 메시지 코드란", messageSource.getMessage("해당 에러 메시지 코드란"));
   }
   ```
   
